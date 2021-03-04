@@ -1,0 +1,115 @@
+/* general styling */
+a.active-link {
+    color: var(--black-color) !important;
+}
+
+/* btn game styling */
+.btn-game {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+
+.btn-game img {
+    height: 50vh;
+}
+
+/* Header section styling */
+nav.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-left img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-right ul>li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-right ul>li>a {
+    position: relative;
+    display: inline-block;
+    color: var(--nav-color);
+    padding: 5px 0 8px;
+}
+
+.nav-right ul>li>a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    bottom: 0;
+    height: 3px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.nav-right ul>li:hover a {
+    color: var(--black-color);
+}
+
+.nav-right ul>li:hover a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--purposes-color);
+}
+
+/* footer seciton styling */
+footer {
+    background: var(--background-color);
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.footer-contact {
+    padding: 10px 0;
+}
+
+.footer-contact .contact-items i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer-links li {
+    padding: 0 0 10px;
+}
+
+.footer-links a {
+    display: inline-block;
+    padding: 5px 0;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.footer-links a:hover {
+    color: var(--purposes-color);
+}
