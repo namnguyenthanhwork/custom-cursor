@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: red;
-
+    --primary-color: #1586e6;
     --purposes-color: #aa80e3;
     --white-color: #fff;
     --black-color: #000;
@@ -26,6 +25,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
+    font-size: 14px;
     color: var(--text-color);
     background-color: var(--background-color)
 }
@@ -55,12 +55,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-body {
-    background: var(--white-color);
-    color: var(--text-color);
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    overflow-x: hidden;
 }

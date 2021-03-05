@@ -94,6 +94,15 @@ footer {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.footer-contact .contact-items i:hover {
+    background-color: var(--purposes-color);
 }
 
 .footer-links li {

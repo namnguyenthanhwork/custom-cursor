@@ -1,0 +1,120 @@
+/* genral styling */
+section {
+    background: var(--background-color);
+    padding: 30px 0;
+}
+
+/* banner section styling */
+.banner {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* new cursor packs styling */
+.header-title {
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+.header-title span {
+    color: var(--primary-color);
+}
+
+.header-title h2 {
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+.header-title h3 {
+    font-size: 15px;
+}
+
+.header-title h3 span {
+    color: var(--primary-color);
+}
+
+.cursor__items {
+    background: var(--white-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cursor-name {
+    text-align: center;
+    padding: 10px;
+}
+
+.cursor-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.items-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-btn .btn-add a {
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    line-height: 50px;
+    padding: 10px 10px;
+    color: var(--white-color);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.items-btn .btn-add a:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+
+.items-btn .btn-add a:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+    margin-left: -3px;
+}
+
+.items-btn .btn-add a:hover {
+    color: var(--text-color);
+    background: var(--white-color);
+}
+
+.items-btn .btn-view {
+    margin-left: 10px;
+    height: 30px;
+    min-width: 100px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid var(--purposes-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
