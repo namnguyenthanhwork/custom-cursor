@@ -17,9 +17,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
     <!-- Main CSS -->
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/cursor.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +30,9 @@
 
 <body>
     <!-- Go back home -->
-    <div><a href="#goback"></a></div>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
 
     <!-- Btn-game -->
     <div class="btn-game"><a href="javascript:;"><img src="./images/logo/game_teaser.png" alt=""></a></div>
@@ -56,18 +60,18 @@
         <div class="grid wide">
             <div class="cursor-packs">
                 <div class="header-title">
-                    <h2>NEW CURSOR <span>PACKS</spa>
+                    <h2>NEW CURSOR <span>PACKS</span>
                     </h2>
                     <h3><span>Most</span> recently added cursor packs</h3>
                 </div>
                 <div class="row">
                     <div class="col l-3 m-4 s-6">
                         <div class="cursor__items">
-                            <!-- <span><i class="far fa-star"></i></span> -->
-                            <div class="cursor-name">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
                                 <h4>Henry Stickmin Jack Doogan and Rifle Cursor</h4>
                             </div>
-                            <div class="cursor-img">
+                            <div class="cursor__items-img">
                                 <img src="./images/new-cursor-packs/henry-stickmin-jack-doogan-and-rifle-pack.png"
                                     alt="henry-stickmin-jack-doogan-and-rifle-pack">
                             </div>
@@ -77,12 +81,555 @@
                                     <a href="javascript:;"><i class="fab fa-windows"></i></a>
                                 </div>
                                 <div class="btn-view">
-                                    <span>VIEW</span>
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Minimal Chili Pepper Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/minimal-chilli-pepper-pack.png"
+                                    alt="minimal-chilli-pepper-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Cute Pterodactyl Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/cute-pterodactyl-cursor-pack.png"
+                                    alt="henry-stickmin-jack-doogan-and-rifle-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Hanako-Kun Mokke Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/hanako-kun-mokke-and-candy-cursor-pack.png"
+                                    alt="hanako-kun-mokke-and-candy-cursor-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>3D Dark Blue Abstract Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/starter-3d-perspective-octopus-color-cursor-pack.png"
+                                    alt="starter-3d-perspective-octopus-color-cursor-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Adym Evans aka Verbalase Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/youtubers-verbalase-cursor-pack.png"
+                                    alt="youtubers-verbalase-cursor-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Ooblets Plob and Gleamy Plob Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/games-ooblets-plob-and-gleamy-plob-pack.png"
+                                    alt="games-ooblets-plob-and-gleamy-plob-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Brawl Stars Lou Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/new-cursor-packs/brawl-stars-lou-and--snow-cone-pack.png"
+                                    alt="brawl-stars-lou-and--snow-cone-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="btn-info">
+                    <div>
+                        <a href="javascript:;" class="btn-all">All Collections</a>
+                    </div>
+                    <div><a href="javascript:;" class="btn-more">More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top cursor packs section -->
+    <section>
+        <div class="grid wide">
+            <div class="cursor-packs">
+                <div class="header-title">
+                    <h2>TOP CURSOR <span>PACKS</span>
+                    </h2>
+                    <h3><span>Our</span> top user picked cursor packs</h3>
+                </div>
+                <div class="row">
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Stain of Paint Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/stain-of-paint-pack.png" alt="tain-of-paint-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Colorful Drink and Donut Neon Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/neon-beverage-and-donut-cursor-pack.png"
+                                    alt="neon-beverage-and-donut-cursor-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Among Us Baby Yoda Character Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/among-us-baby-yoda-skin-pack.png"
+                                    alt="among-us-baby-yoda-skin-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Among Us Donut Character Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/among-us-baby-yoda-skin-pack.png"
+                                    alt="among-us-baby-yoda-skin-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Neon Angel and Devil Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/neon-angel-and-devil-cursor-pack.png"
+                                    alt="neon-angel-and-devil-cursor-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Pusheen Yoda and Lightsaber Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/pusheen-yoda-and-lightsaber-pack.png"
+                                    alt="pusheen-yoda-and-lightsaber-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Alien Pusheen Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/pusheen-alien-and-ufo-pack.png"
+                                    alt="pusheen-alien-and-ufo-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Cute Potato Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/top-cursor-packs/cute-potato-pack.png" alt="cute-potato-pack">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-info">
+                    <div>
+                        <a href="javascript:;" class="btn-all">All Collections</a>
+                    </div>
+                    <div><a href="javascript:;" class="btn-more">More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outer space section -->
+    <section>
+        <div class="grid wide">
+            <div class="cursor-packs">
+                <div class="header-title">
+                    <h2>OUTER SPACE</h2>
+                    <h3><span>Somewhere,</span> something incredible is waiting to be known Alien Pusheen Cursor</h3>
+                </div>
+                <div class="row">
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Colourful Comet and Earth Neon Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Colourful Comet and Earth Neon Cursor.png"
+                                    alt="Colourful Comet and Earth Neon Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Blue Rocket and Yellow Stars Neon Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Blue Rocket and Yellow Stars Neon Cursor.png"
+                                    alt="Blue Rocket and Yellow Stars Neon Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Star and Moon Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Star and Moon Cursor.png" alt="Star and Moon Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Galaxy Flask Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Galaxy Flask Cursor.png" alt="Galaxy Flask Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Rick and Morty Screaming Sun Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Rick and Morty Screaming Sun Cursor.png"
+                                    alt="Rick and Morty Screaming Sun Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>VSCO Girl Avocado and Alien Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/VSCO Girl Avocado and Alien Cursor.png"
+                                    alt="VSCO Girl Avocado and Alien Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Toy Story Buzz Lightyear Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Toy Story Buzz Lightyear Cursor.png"
+                                    alt="Toy Story Buzz Lightyear Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 s-6">
+                        <div class="cursor__items">
+                            <span class="favorite-cursor"><i class="fas fa-star"></i></span>
+                            <div class="cursor__items-name">
+                                <h4>Nyan Cat Cursor</h4>
+                            </div>
+                            <div class="cursor__items-img">
+                                <img src="./images/outer-space/Nyan Cat Cursor.png" alt="Nyan Cat Cursor">
+                            </div>
+                            <div class="items-btn">
+                                <div class="btn-add">
+                                    <a href="javascript:;">ADD</a>
+                                    <a href="javascript:;"><i class="fab fa-windows"></i></a>
+                                </div>
+                                <div class="btn-view">
+                                    <a href="javascript:;">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-info">
+                    <div>
+                        <a href="javascript:;" class="btn-all">All editor picks</a>
+                    </div>
+                    <div><a href="javascript:;" class="btn-more">More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All cursor collections section -->
+    <section>
+        <div class="grid wide">
+            <div class="header-title">
+                <h2>ALL CURSOR <span>COLLECTIONS</span></span>
+                </h2>
+            </div>
+            <div class="carousel owl-carousel">
+                <div class="cursor-collection__items">
+                    <div><img src="./images/cursor-collection/cover-neon-small-preview.png"
+                            alt="cover-neon-small-preview"></div>
+                    <h3 class="cursor-collection__items-title">Neon</h3>
+                </div>
+
             </div>
         </div>
     </section>

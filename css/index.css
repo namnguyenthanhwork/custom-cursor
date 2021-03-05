@@ -1,4 +1,40 @@
 /* general styling */
+/* button menu go back styling */
+.scroll-up-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 65px;
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    opacity: 0;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 35px;
+    opacity: 1;
+}
+
+.scroll-up-btn:hover {
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
 a.active-link {
     color: var(--black-color) !important;
 }
@@ -6,6 +42,7 @@ a.active-link {
 /* btn game styling */
 .btn-game {
     position: fixed;
+    z-index: 1;
     right: 0;
     bottom: 50%;
     transform: translateY(50%);

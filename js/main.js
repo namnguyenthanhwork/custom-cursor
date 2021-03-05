@@ -1,12 +1,5 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        // sticky navbar on scroll script
-        if (this.scrollY > 20) {
-            $(".header").addClass("sticky");
-        } else {
-            $(".header").removeClass("sticky");
-        }
-
         // scroll-up button show/hide script
         if (this.scrollY > 20) {
             $(".scroll-up-btn").addClass("show");
@@ -45,25 +38,10 @@ $(document).ready(function () {
         $(".button-contact").toggleClass("contact-active");
     });
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Developer", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-    });
-
-    var typed = new Typed(".typing-name", {
-        strings: ["Nguyen Thanh Nam"],
-        typeSpeed: 80,
-        backSpeed: 60,
-        loop: true,
-    });
-
     // owl carousel script
     $(".carousel").owlCarousel({
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 2000,
         autoplaySpeed: 1500,
         margin: 20,
         loop: true,
@@ -71,87 +49,17 @@ $(document).ready(function () {
         dot: true,
         responsive: {
             0: {
-                items: 1,
-            },
-            600: {
                 items: 2,
             },
-            1024: {
+            600: {
                 items: 3,
+            },
+            1024: {
+                items: 4,
             },
         },
     });
 });
-// current realtime
-function renderTime() {
-    // get date current time
-    var dateRealTime = new Date();
-    var yearNow = dateRealTime.getFullYear();
-    var dateNow = dateRealTime.getDay();
-    var monthNow = dateRealTime.getMonth() + 1;
-
-    // date of birth
-    var dob = new Date(2001, 01, 16);
-    var yearDob = dob.getYear() + 1900;
-    var monthDob = dob.getMonth();
-    var dateDob = dob.getDate();
-
-    // processing
-    var yearAge = yearNow - yearDob;
-    if (monthNow >= monthDob) var monthAge = monthNow - monthDob;
-    else {
-        yearNow--;
-        var monthAge = 12 + monthNow - monthDob;
-    }
-    if (dateNow >= dateDob) var dateAge = dateNow - dateDob;
-    else {
-        monthAge--;
-        var dateAge = 31 + dateNow - dateDob;
-
-        if (monthAge < 0) {
-            monthAge = 11;
-            yearAge--;
-        }
-    }
-
-    // format time
-    var currentTime = new Date();
-    var h = currentTime.getHours();
-    var m = currentTime.getMinutes();
-    var s = currentTime.getSeconds();
-    if (h == 24) {
-        h = 0;
-    } else {
-        if (h > 12) h -= 0;
-    }
-    if (h < 10) h = "0" + h;
-    if (m < 10) m = "0" + m;
-    if (s < 10) s = "0" + s;
-
-    var myYears = document.getElementById("years");
-    var myMonths = document.getElementById("months");
-    var myDays = document.getElementById("days");
-    var myHours = document.getElementById("hours");
-    var myMinutes = document.getElementById("minutes");
-    var mySeconds = document.getElementById("seconds");
-
-    myYears.innerText = yearAge;
-    myMonths.innerText = monthAge;
-    myDays.innerText = dateAge;
-    myHours.innerText = h;
-    myMinutes.innerText = m;
-    mySeconds.innerText = s;
-
-    myYears.style.color = `#ed4747`;
-    myMonths.style.color = `#ed4747`;
-    myDays.style.color = `#ed4747`;
-    myHours.style.color = `#0099ff`;
-    myMinutes.style.color = `#0099ff`;
-    mySeconds.style.color = `#0099ff`;
-
-    setTimeout("renderTime()", 1000);
-}
-renderTime();
 
 // init cursor
 var cursors = [{
@@ -169,11 +77,3 @@ var cursors = [{
     width: "30",
     blending_mode: "normal",
 }, ];
-
-function alertCV() {
-    swal(
-        "Opps, 404",
-        "Sorry! You can't download CV, please try the next time. Thank you!!!",
-        "error"
-    );
-}

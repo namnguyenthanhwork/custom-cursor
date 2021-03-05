@@ -9,6 +9,7 @@
     --text-color: #222;
     --nav-color: #8b727b;
     --background-color: #ecf2f3;
+    --shadow-color: #7f89a19a;
 }
 
 * {
@@ -55,4 +56,30 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* custom carousel styling */
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid var(--purposes-color) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: var(--purposes-color) !important;
 }
