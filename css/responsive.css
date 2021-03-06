@@ -2,22 +2,118 @@
 @import url(../css/grid.css);
 
 /*-----------------------------------
-  Mobile & Tablet 
- -----------------------------------*/
-@media (max-width: 1023px) {}
+    PC low resolution 
+-----------------------------------*/
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .banner {
+        width: 800px;
+    }
+
+    .btn-game img {
+        height: 25vh;
+    }
+}
+
+/*-----------------------------------
+    Mobile & Tablet 
+-----------------------------------*/
+@media (max-width: 1023px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .nav-right ul {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 80px 0 0;
+        background: var(--primary-color);
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+    }
+
+    .nav-right>ul>li {
+        display: block;
+        padding: 20px 0;
+        margin-right: unset;
+    }
+
+    .nav-right>ul>li>a {
+        color: var(--white-color);
+        font-size: 20px;
+    }
+
+    .nav-right ul.active {
+        right: 0;
+    }
+}
 
 /*------------------------------------
     Tablet
-    ----------------------------------*/
-@media (min-width: 600px) and (max-width:1023px) {}
-
-/*------------------------------------
-    Mobile
-    ----------------------------------*/
-@media (max-width: 600px) {
-    .grid {
-        width: 90%;
+----------------------------------*/
+@media (min-width: 768px) and (max-width:1023px) {
+    .nav-left img {
+        width: 100px;
     }
 
+    .banner {
+        width: 590px;
+    }
 
+    .btn-game img {
+        height: 35vh;
+    }
+}
+
+/*------------------------------------
+    Mobile & Mobile landscape
+----------------------------------*/
+@media (max-width: 767px) {
+    .nav-left img {
+        width: 90px;
+    }
+
+    .menu-btn {
+        font-size: 25px;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
+
+    .btn-game {
+        display: none;
+    }
+
+    .header-title h2 {
+        font-size: 20px;
+    }
+
+    .btn-all,
+    .btn-more {
+        padding: 5px 10px;
+    }
+
+    .cursor-collection__items h3 {
+        font-size: 14px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-links li {
+        padding: 5px 0 5px;
+    }
 }

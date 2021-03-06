@@ -131,6 +131,10 @@ section {
     flex: 1 0 auto;
 }
 
+.cursor__items-img {
+    margin: 0 auto;
+}
+
 .cursor__items-img img {
     width: 100%;
     height: 150px;
@@ -173,7 +177,7 @@ section {
     border-bottom-left-radius: 0;
     background: var(--primary-color);
     border: 2px solid var(--primary-color);
-    margin-left: -3px;
+    margin-left: -2px;
 }
 
 .items-btn .btn-add a:hover {
@@ -259,6 +263,19 @@ section {
 .cursor-collection__items a {
     position: relative;
     display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cursor-collection__items a img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .cursor-collection__items a::before {
@@ -276,6 +293,11 @@ section {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .cursor-collection__items h3 {
@@ -284,6 +306,7 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
+    white-space: nowrap;
     color: var(--white-color);
     font-size: 17px;
     font-weight: 900;
@@ -338,7 +361,7 @@ section {
     width: 100%;
     position: relative;
     padding: 40px 30px;
-    bottom: -50%;
+    bottom: -30%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

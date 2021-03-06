@@ -20,7 +20,6 @@
 
 html {
     font-size: 62.5%;
-    line-height: 1.5;
     scroll-behavior: smooth;
 }
 
@@ -28,6 +27,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: var(--text-color);
+    line-height: 1.3;
     background-color: var(--background-color)
 }
 

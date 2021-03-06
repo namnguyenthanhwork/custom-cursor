@@ -28,14 +28,8 @@ $(document).ready(function () {
 
     // toggle menu/navbar script
     $(".menu-btn").click(function () {
-        $(".navbar .menu").toggleClass("active");
+        $(".nav-right ul").toggleClass("active");
         $(".menu-btn i").toggleClass("active");
-    });
-
-    //toggle button contact
-    $(".contact-btn").click(function () {
-        $(".contact-btn").toggleClass("contact-active");
-        $(".button-contact").toggleClass("contact-active");
     });
 
     // owl carousel script
@@ -51,10 +45,10 @@ $(document).ready(function () {
             0: {
                 items: 2,
             },
-            600: {
+            992: {
                 items: 3,
             },
-            1024: {
+            1200: {
                 items: 4,
             },
         },
