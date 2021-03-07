@@ -2,22 +2,41 @@
 @import url(../css/grid.css);
 
 /*-----------------------------------
-    PC low resolution 
+    PC low & Tablet large resolution
 -----------------------------------*/
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* banner */
     .banner {
         width: 800px;
-    }
-
-    .btn-game img {
-        height: 25vh;
     }
 }
 
 /*-----------------------------------
-    Mobile & Tablet 
+ <= Tablet resolution 
 -----------------------------------*/
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
+
+    /* banner page windows */
+    .download-content {
+        font-size: 17px;
+    }
+
+    .download-content a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .download-img {
+        bottom: 30px;
+    }
+
+    .download-img img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 991px) {
     .menu-btn {
         display: block;
     }
@@ -57,22 +76,31 @@
     .nav-right ul.active {
         right: 0;
     }
+
+    /* btn-game */
+    .btn-game {
+        bottom: unset;
+        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+    }
 }
 
 /*------------------------------------
     Tablet
 ----------------------------------*/
-@media (min-width: 768px) and (max-width:1023px) {
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* navbar */
     .nav-left img {
         width: 100px;
     }
 
+    /* banner */
     .banner {
         width: 590px;
-    }
-
-    .btn-game img {
-        height: 35vh;
     }
 }
 
@@ -80,6 +108,8 @@
     Mobile & Mobile landscape
 ----------------------------------*/
 @media (max-width: 767px) {
+
+    /* navbar */
     .nav-left img {
         width: 90px;
     }
@@ -88,16 +118,27 @@
         font-size: 25px;
     }
 
+    /* banner */
     .banner-mobile {
         display: none;
     }
 
+    /* btn-game */
     .btn-game {
         display: none;
     }
 
+    /* general styling */
     .header-title h2 {
         font-size: 20px;
+    }
+
+    .btn-info {
+        flex-direction: column;
+    }
+
+    .btn-info>div {
+        padding: 0 0 10px;
     }
 
     .btn-all,
@@ -109,6 +150,12 @@
         font-size: 14px;
     }
 
+    /* banner page window */
+    .banner-page__content {
+        flex-direction: column;
+    }
+
+    /* footer */
     footer {
         text-align: center;
     }

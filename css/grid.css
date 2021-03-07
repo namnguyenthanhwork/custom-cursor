@@ -1,22 +1,15 @@
 /* Prefix class
-    grid - one block
-    wide - container
-    row - row in wide
-    col - column
+    container
+    row - flex 
+    col - padding left, right
     s - small (mobile resolution from 0px -> 575px)
     sm - small medium (landscape mobile resolution from 576px -> 768px)  
     m - medium (tablet resolution from 768px -> 991px)
     ml - medium large (tablet. pc low resolution from 992px -> 1199px)
     l - large (pc resolution >= 1200px)
     o -offset */
-.grid {
-  width: 100%;
-  display: block;
-  padding: 0;
-}
-
-.grid.wide {
-  max-width: 1200px;
+.container {
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -196,8 +189,8 @@
 
 /* Tablet & PC low resolution */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .grid.wide {
-    width: 780px;
+  .container {
+    width: 960px;
     margin: 0 auto;
   }
 
@@ -347,8 +340,8 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  .grid.wide {
-    max-width: 700px;
+  .container {
+    max-width: 720px;
     margin: 0 auto;
   }
 
@@ -488,8 +481,8 @@
 
 /* Landscape mobile */
 @media (min-width: 576px) and (max-width: 767px) {
-  .grid.wide {
-    width: 544px;
+  .container {
+    width: 540px;
     margin: 0 auto;
   }
 
@@ -604,8 +597,14 @@
 
 /* Mobile */
 @media screen and (max-width: 575px) {
-  .grid {
-    width: 90%;
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .col {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .s-0 {
