@@ -64,6 +64,10 @@ a.active-link {
 }
 
 /* Header section styling */
+header {
+    background: var(--white-color);
+}
+
 nav.header {
     display: flex;
     align-items: center;

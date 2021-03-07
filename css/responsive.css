@@ -164,3 +164,15 @@
         padding: 5px 0 5px;
     }
 }
+
+@media (max-width:575px) {
+
+    /* Colletion Page */
+    .cursor__collection-img {
+        width: unset;
+    }
+
+    .cursor__collection-img img {
+        width: unset;
+    }
+}
