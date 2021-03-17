@@ -630,3 +630,18 @@ section {
     color: var(--white-color);
     background: var(--purposes-color);
 }
+
+
+/* Download page styling */
+.download-btn {
+    display: block;
+    background: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
