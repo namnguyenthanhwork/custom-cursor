@@ -86,6 +86,15 @@
         -ms-transform: translateY(50%);
         -o-transform: translateY(50%);
     }
+
+    /* banner page window */
+    .page-content_title h1 {
+        font-size: 35px;
+    }
+
+    .page-content_title p {
+        font-size: 20px;
+    }
 }
 
 /*------------------------------------
@@ -155,6 +164,22 @@
         flex-direction: column;
     }
 
+    .download-btn {
+        width: 150px;
+        padding: 10px 0;
+    }
+
+    .page-content_title h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .page-content_title p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
     /* footer */
     footer {
         text-align: center;
@@ -162,6 +187,10 @@
 
     .footer-links li {
         padding: 5px 0 5px;
+    }
+
+    .hidden-display {
+        display: block;
     }
 }
 
