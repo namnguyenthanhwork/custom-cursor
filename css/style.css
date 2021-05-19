@@ -660,23 +660,23 @@ section {
     position: relative;
 }
 
-.page-content_title {
+.intro {
     z-index: 2;
 }
 
-.page-content_title h1 {
+h1.title {
     margin-top: 10%;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.page-content_title p {
+p.content {
     font-size: 26px;
     padding: 10px 0;
 }
 
-.page-content_title .download-btn {
+.intro .download-btn {
     margin: 0 auto;
 }
 
@@ -755,7 +755,7 @@ section {
     top: 17%;
     left: 14%;
     width: 100px;
-    height: 50px;
+    height: 100px;
     animation: rotate 3s infinite;
     -webkit-animation: rotate 3s infinite;
 }
@@ -796,27 +796,27 @@ section {
 
 @keyframes zoom {
     0% {
-        transform: scale(0.7);
-        -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        -o-transform: scale(0.7);
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
     }
 
     50% {
-        transform: scale(1.3);
-        -webkit-transform: scale(1.3);
-        -moz-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        -o-transform: scale(1.3);
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
     }
 
     100% {
-        transform: scale(0.7);
-        -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        -o-transform: scale(0.7);
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
     }
 }
 
@@ -826,4 +826,204 @@ section {
     right: 10%;
     animation: zoom 3s infinite;
     -webkit-animation: zoom 3s infinite;
+}
+
+/* local brand styling */
+.local-brand {
+    background: url(../images/download-page/bglist-link.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.local-brand div {
+    margin-bottom: 20px;
+}
+
+.local-brand h1.title {
+    margin-top: unset;
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.local-brand_link {
+    display: block;
+    padding: 15px;
+    border: 2px solid var(--shadow-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.local-brand_link:hover {
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.local-brand_link img {
+    display: block;
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+/* video section styling */
+.video {
+    background: url(../images/download-page/watch__bg.png) 100% 100% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.video .img-banner {
+    position: relative;
+    z-index: 2;
+}
+
+.video .img-banner img:nth-child(2) {
+    position: absolute;
+    top: 37.5%;
+    left: 39%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.video .img-banner img:nth-child(2):hover {
+    box-shadow: 0 0 24px rgb(251 148 80 / 99%);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+/* intutive section styling*/
+.intuitive {
+    background: url(../images/download-page/intuitivebg.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.intuitive h1.title {
+    margin-top: 2%;
+}
+
+.intuitive .img-banner {
+    animation: zoom 5s infinite;
+    -webkit-animation: zoom 5s infinite;
+}
+
+.intuitive .intro img {
+    animation: zoom 5s infinite;
+    -webkit-animation: zoom 5s infinite;
+}
+
+/* brightness section styling */
+.brightness {
+    background: url(../images/download-page/brightness__bg.png) 100% 100% no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.brightness h1.title {
+    margin-top: unset;
+}
+
+.brightness .intro h1.title {
+    color: var(--primary-color);
+}
+
+.brightness .container>h1.title {
+    text-align: center;
+}
+
+.brightness .img-banner {
+    position: relative;
+}
+
+.brightness .img-banner img:not(img:first-child) {
+    width: 110px;
+    height: 80px;
+    position: absolute;
+    outline: none;
+    z-index: 3;
+}
+
+.brightness .img-banner img:nth-child(2) {
+    top: 0;
+    left: 0;
+    z-index: 1 !important;
+    animation: moveLeft 3s infinite;
+    -webkit-animation: moveLeft 3s infinite;
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -10%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.brightness .img-banner img:nth-child(3) {
+    top: -7%;
+    right: 15%;
+    animation: rotateAround 3s infinite;
+    -webkit-animation: rotateAround 7s infinite;
+}
+
+@keyframes rotateAround {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+
+    60% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+}
+
+.brightness .img-banner img:nth-child(4) {
+    top: 20%;
+    right: 5%;
+}
+
+.brightness .img-banner img:nth-child(5) {
+    bottom: 0;
+    right: 5%;
+    width: 80px !important;
+    height: 120px !important;
+}
+
+.brightness .img-banner img:nth-child(6) {
+    bottom: -2%;
+    left: 0;
 }

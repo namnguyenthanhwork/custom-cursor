@@ -3,6 +3,7 @@
 
 :root {
     --primary-color: #1586e6;
+    --secondary-color: #2754a9;
     --purposes-color: #aa80e3;
     --white-color: #fff;
     --black-color: #000;
@@ -12,7 +13,7 @@
     --shadow-color: #7f89a19a;
 }
 
-    * {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
