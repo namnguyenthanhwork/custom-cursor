@@ -949,8 +949,8 @@ p.content {
 }
 
 .brightness .img-banner img:not(img:first-child) {
-    width: 110px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: absolute;
     outline: none;
     z-index: 3;
@@ -959,6 +959,8 @@ p.content {
 .brightness .img-banner img:nth-child(2) {
     top: 0;
     left: 0;
+    width: 80px;
+    height: 80px;
     z-index: 1 !important;
     animation: moveLeft 3s infinite;
     -webkit-animation: moveLeft 3s infinite;
@@ -970,7 +972,7 @@ p.content {
     }
 
     50% {
-        left: -10%;
+        left: -5%;
     }
 
     100% {
@@ -1014,6 +1016,7 @@ p.content {
 .brightness .img-banner img:nth-child(4) {
     top: 20%;
     right: 5%;
+    width: 120px !important;
 }
 
 .brightness .img-banner img:nth-child(5) {
@@ -1024,6 +1027,130 @@ p.content {
 }
 
 .brightness .img-banner img:nth-child(6) {
-    bottom: -2%;
+    bottom: 15%;
     left: 0;
+    width: 85px !important;
+}
+
+/* large section */
+.large-section {
+    background: url(../images/download-page/bgselection.png) 100% 100% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.large-section_content h1.title {
+    margin-top: unset;
+}
+
+.large-section .img-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.large-section .img-banner img {
+    opacity: 0.8;
+}
+
+.large-section_content {
+    position: absolute;
+    margin: auto;
+    width: 340px;
+    text-align: center;
+    top: 30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.large-section_content .download-btn {
+    margin: 0 auto;
+}
+
+/* Download */
+.download {
+    background: url(../images/download-page/download__bg.png) 100% 100% no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.download .img-banner {
+    position: relative;
+    outline: none;
+}
+
+.download .img-banner img:first-child {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: moveUpDown 4s infinite;
+    -webkit-animation: moveUpDown 4s infinite;
+}
+
+.download .img-banner img:nth-child(2) {
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: moveUpDown 4s infinite;
+    -webkit-animation: moveUpDown 4s infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    25% {
+        transform: translate(-50%, calc(-50% - 20px));
+        -webkit-transform: translate(-50%, calc(-50% - 20px));
+        -moz-transform: translate(-50%, calc(-50% - 20px));
+        -ms-transform: translate(-50%, calc(-50% - 20px));
+        -o-transform: translate(-50%, calc(-50% - 20px));
+    }
+
+    50% {
+        transform: translate(-50%, calc(-50% + 20px));
+        -webkit-transform: translate(-50%, calc(-50% + 20px));
+        -moz-transform: translate(-50%, calc(-50% + 20px));
+        -ms-transform: translate(-50%, calc(-50% + 20px));
+        -o-transform: translate(-50%, calc(-50% + 20px));
+    }
+
+    75% {
+        transform: translate(-50%, calc(-50% - 20px));
+        -webkit-transform: translate(-50%, calc(-50% - 20px));
+        -moz-transform: translate(-50%, calc(-50% - 20px));
+        -ms-transform: translate(-50%, calc(-50% - 20px));
+        -o-transform: translate(-50%, calc(-50% - 20px));
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
 }

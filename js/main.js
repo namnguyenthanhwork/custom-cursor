@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    // loader page when reload
-    $(window).on("load", function () {
-        $(".loader-wrapper").fadeOut("slow")
-    })
-
     $(window).scroll(function () {
         // scroll-up button show/hide script
         if (this.scrollY > 20) {

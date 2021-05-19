@@ -97,11 +97,17 @@
 
     /* banner page window */
     h1.title {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     p.content {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    /* large section */
+    .large-section_content {
+        width: 250px;
+        top: 30%;
     }
 }
 
@@ -181,19 +187,18 @@
     }
 
     .download-btn {
-        width: 150px;
-        padding: 10px 0;
+        width: 130px;
+        padding: 5px 0;
     }
 
     h1.title {
-        font-size: 28px;
+        font-size: 20px;
         text-align: center;
     }
 
     p.content {
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
-        padding: 0 0 20px 0;
     }
 
     /* local brand */
@@ -207,6 +212,10 @@
         display: none;
     }
 
+    .video .row {
+        flex-direction: column-reverse;
+    }
+
     /* brightness */
     .brightness .row {
         flex-direction: column-reverse;
@@ -214,6 +223,35 @@
 
     .brightness .col {
         margin-top: 25px;
+    }
+
+    /* large section */
+    .large-section_content {
+        width: 180px;
+        top: 40%;
+    }
+
+    .large-section_content p.content {
+        padding: 5px 0;
+    }
+
+    /* download */
+    .download .intro h1.title {
+        margin-top: unset;
+        margin-bottom: 15%;
+    }
+
+    .download .img-banner img:first-child {
+        top: 15%;
+        position: relative;
+        width: 140px;
+        height: 100px;
+    }
+
+    .download .img-banner img:nth-child(2) {
+        top: 45%;
+        width: 250px;
+        height: 100px;
     }
 
     /* footer */
